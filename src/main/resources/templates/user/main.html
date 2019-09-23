@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/css/bootstrap.css}"></link>
+    <title>主页面</title>
+</head>
+<body>
+
+
+
+<div class="with:80%">
+    <form class="form-horizontal" th:action="@{/deng}"  method="post">
+    <div ><h3 >&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;用户登录</h3></div>
+    <div class="form-group">
+        <label for="name" class="col-sm-2 control-label">账号</label>
+        <div class="col-sm-10">
+            <input type="text"  name="name"  id="name" >
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="score" class="col-sm-2 control-label" >密码</label>
+        <div class="col-sm-10">
+            <input type="score"  name="score" id="score" >
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <br>
+                <input type="submit" value="登陆" class="btn btn-info" >
+
+                &nbsp;&nbsp;&nbsp;
+
+            </div>
+        </div>
+    </div>
+    </form>
+
+    <form  class="form-horizontal" th:action="@{/zhu}"  method="post">
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+        <input type="submit" value="注册"  class="btn btn-info" >
+            </div>
+        </div>
+    </form>
+    <br>
+    <form class="form-horizontal"   th:action="@{/toguan}"  method="post">
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <input type="submit" value="管理员登陆"  class="btn btn-info" >
+            </div>
+        </div>
+    </form>
+<!--<form class="form-horizontal"   th:action="@{/lis}"  method="post">
+    用户名单<br>
+    <input type="submit" value="用户名单">
+
+</form>-->
+</div>
+
+</body>
+</html>
